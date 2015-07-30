@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="455dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/remane_input_back"
+                android:orientation="vertical" >
+
+                <com.zidoo.recorder.view.ZidooTextView
+                    android:id="@+id/rename_input_hit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginTop="25dip"
+                    android:textColor="#444444"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/remane_input_edit_ch"
+                    android:layout_width="300dip"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dip"
+                    android:background="@drawable/input_selector"
+                    android:hint="@string/rename_hit"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:singleLine="true"
+                    android:textColor="#444444"
+                    android:textColorHint="#9f9f9f"
+                    android:textSize="26sp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                     android:layout_marginBottom="15dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dip"
+                    android:orientation="horizontal" >
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/remane_input_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/lock_btn_c"
+                        android:gravity="center"
+                        android:text="@string/btn_ok"
+                        android:textColor="@drawable/lock_text_systle"
+                        android:textSize="20sp" />
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/remane_input_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:background="@drawable/lock_btn_c"
+                        android:gravity="center"
+                        android:text="@string/btn_canle"
+                        android:textColor="@drawable/lock_text_systle"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

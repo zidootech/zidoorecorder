@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/home_ac_downView_himiin_re"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/home_ac_downView_himiin_surfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/home_ac_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="36dip"
+                android:layout_height="34dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/recording" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/home_ac_noinfor"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_infor"
+                android:textColor="#ffffff"
+                android:textSize="60sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/home_ac_menue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dip"
+            android:layout_marginRight="30dip"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_record"
+                android:textColor="#ffffff"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

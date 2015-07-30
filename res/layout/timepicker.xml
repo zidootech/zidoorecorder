@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/timePicker1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/time_bg"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+        </LinearLayout>
+
+        <com.zidoo.recorder.time.WheelView
+            android:id="@+id/year"
+            android:layout_width="118dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:visibility="gone" />
+        <!-- 月 -->
+
+        <LinearLayout
+            android:id="@+id/viewMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/month"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/btn1_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_up" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="127dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center" >
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/btn1"
+                        android:layout_width="127dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/compose_bg" />
+
+                    <com.zidoo.recorder.time.WheelView
+                        android:id="@+id/month"
+                        android:layout_width="118dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="3dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn1_down"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 日 -->
+
+        <LinearLayout
+            android:id="@+id/viewDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/day"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/btn2_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_up" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="127dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center" >
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/btn2"
+                        android:layout_width="127dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/compose_bg" />
+
+                    <com.zidoo.recorder.time.WheelView
+                        android:id="@+id/day"
+                        android:layout_width="118dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="3dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn2_down"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 天 -->
+
+        <LinearLayout
+            android:id="@+id/viewToDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/day"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="270dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/btn6_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_up" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="260dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center" >
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/btn6"
+                        android:layout_width="260dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/compose_bg1"
+                        android:textColor="#0FF000"
+                        android:textSize="26sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn6_down"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 时 -->
+
+        <LinearLayout
+            android:id="@+id/viewHour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/hour"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/btn3_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_up" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="127dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_default" >
+
+                    <com.zidoo.recorder.time.WheelView
+                        android:id="@+id/hour"
+                        android:layout_width="118dp"
+                        android:layout_height="38dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="3dp" />
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/btn3"
+                        android:layout_width="127dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/compose_bg" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn3_down"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 分 -->
+
+        <LinearLayout
+            android:id="@+id/viewMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/min"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/btn4_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_up" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="127dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_default" >
+
+                    <com.zidoo.recorder.time.WheelView
+                        android:id="@+id/min"
+                        android:layout_width="118dp"
+                        android:layout_height="38dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="3dp" />
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/btn4"
+                        android:layout_width="127dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/compose_bg" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn4_down"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 秒 -->
+
+        <LinearLayout
+            android:id="@+id/viewSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/second"
+                android:textColor="#ffffff"
+                android:textSize="26sp" />
+
+            <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="100dip"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/btn5_up"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_up" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="127dp"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_default" >
+
+                    <com.zidoo.recorder.time.WheelView
+                        android:id="@+id/seconds"
+                        android:layout_width="118dp"
+                        android:layout_height="38dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="3dp" />
+
+                    <com.zidoo.recorder.view.ZidooButton
+                        android:id="@+id/btn5"
+                        android:layout_width="127dp"
+                        android:layout_height="59dp"
+                        android:background="@drawable/compose_bg" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn5_down"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:visibility="invisible" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="35dip"
+        android:text="@string/video_bespoke_time"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/imagePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.zidoo.recorder.view.ZidooTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="200dip"
+        android:textColor="#7F7F7F"
+        android:textSize="23sp" />
+
+    <com.zidoo.recorder.view.ZidooTextView
+        android:id="@+id/Prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="50dip"
+        android:layout_marginTop="200dip"
+        android:textColor="#7F7F7F"
+        android:textSize="23sp" />
+
+    <com.zidoo.recorder.view.ZidooTextView
+        android:id="@+id/time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/title"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_marginRight="88dp"
+        android:text="@string/video_bespoke_time"
+        android:textSize="26sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

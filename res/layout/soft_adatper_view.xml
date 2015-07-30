@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="880dip"
+        android:layout_height="65dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/tv_item_changed_bg_no"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="80dip" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/soft_adatper_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:typeface="normal" />
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/soft_adatper_view_size"
+                android:layout_width="270dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:textColor="#cccccc"
+                android:textSize="24sp"
+                android:typeface="normal"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/soft_adatper_view_statu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/list_re_ing" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">הקלטה</string>
+    <string name="startRecord">התחל</string>
+    <string name="stopRecord">עצור</string>
+    <string name="no_infor">לא נמצא אות ממיר</string>
+    <string name="no_infor_msg">לא נמצא אות וידאו מהממיר. בדוק שוב את החיבור בין המכשיר לממיר</string>
+    <string name="menu_record">תפריט הקלטות</string>
+    <string name="dialog_left_title">R\ne\nc\no\nr\nd</string>
+    <string name="dialog_right_title">L\ni\ns\nt</string>
+    <string name="dialog_right_title1">/mnt/usb/zidoorecord</string>
+    <string name="video_save_local_path">נתיב</string>
+    <string name="video_resolution">רזולוציה</string>
+     <string name="video_input_resolution">אות ממיר</string>
+    <string name="video_format">פורמט</string>
+    <string name="video_appointment">חתימת זמן</string>
+    <string name="video_appointment_year">2014/7/6 11:22:50</string>
+    <string name="video_length">אורך</string>
+    <string name="video_length_auto">אוטומטי</string>
+    <string name="video_length_h">00:10:00</string>
+    <string name="video_re_hd">HD</string>
+    <string name="video_re_vga">VGA</string>
+    <string name="video_re_fhd">FHD</string>
+    <string name="video_format_mp4">MP4</string>
+    <string name="video_format_ts">TS</string>
+    <string name="start_recorder">התחל הקלטה</string>
+    <string name="stop_recorder">עצור הקלטה</string>
+    <string name="start_appointment">הוסף הקלטה</string>
+    <string name="statu_recorder">סטאטוס</string>
+    <string name="statu_name">שם הקובץ</string>
+    <string name="statu_position">נתיב הקלטה</string>
+    <string name="statu_formatn">פורמט</string>
+    <string name="statu_resolution">רזולוציה</string>
+    <string name="statu_time">חותמת זמן</string>
+    <string name="statu_timeall">אורך</string>
+    <string name="statu_timeing">מקליט</string>
+    <string name="statu_statu">סטאטוס</string>
+    <string name="statu_statu_reing">מקליט</string>
+    <string name="statu_reing_net_open">מבצע הקלטה, נא לא לנגן קובץ</string>
+    <string name="statu_reing_net_edit">מבצע הקלטה, נא לא לבצע עריכה</string>
+    <string name="statu_reing">מקליט</string>
+    <string name="statu_stop">עצור הקלטה</string>
+    <string name="statu_waite">בהמתנה</string>
+    <string name="statu_save_k">אין די זיכרון</string>
+    <string name="key_menu_file">תפריט עריכה</string>
+    <string name="list_left_remame">שינוי שם</string>
+    <string name="list_left_delete">מחק</string>
+    <string name="slash">/</string>
+    <string name="colon">:</string>
+    <string name="year">שנה</string>
+    <string name="month">חודש</string>
+    <string name="day">יום</string>
+    <string name="hour">שעה</string>
+    <string name="min">דקה</string>
+    <string name="second">שניה</string>
+    <string name="time_msg">תאריך שנקבע לא יכול להיות תאריך בעבר</string>
+    <string name="time_length">אורך זמן הקלטה חייב להיות ארוך מחמש שניות</string>
+    <string name="delete_y">מחק</string>
+    <string name="rename_re_have">שינוי שם נכשל שכן הקובץ נמצא בשימוש</string>
+    <string name="rename_fail">שינוי שם נכשל</string>
+    <string name="rename_success">שינוי שם הקובץ בוצע בהצלחה</string>
+    <string name="rename">שינוי שם</string>
+    <string name="delete_file">מחק קובץ</string>
+    <string name="delete_ok">האם למחוק את הקובץ המסומן ?</string>
+    <string name="btn_ok">אישור</string>
+    <string name="btn_canle">ביטול</string>
+    <string name="rename_hit">שם קובץ חדש</string>
+    <string name="input_rename">הקלד שם חדש לקובץ</string>
+    <string name="delete_success">מחיקת קובץ בוצעה בהצלחה</string>
+    <string name="re_time_auto">אוטומטית</string>
+    <string name="record_over">דריסה</string>
+    <string name="record_delete">האם אתה בטוח שברצונך למחוק את רשומת התזמון </string>
+    <string name="record_delete_hit">מסך קופץ</string>
+    <string name="exit_hit_msg">יציאה מהאפליקציה תפסיק את ההקלטה</string>
+    <string name="exit_str">יציאה</string>
+    <string name="not_list_hint">לא נמצא וידאו</string>
+    <string name="yuyue_time_ok_msg">מועד ביצוע הקלטה הגיע</string>
+    <string name="choose_appoint">בחר מועד מתוזמן</string>
+    <string name="appoint_above">המועד המתוזמן שנבחר נמצא בעבר</string>
+    <string name="av_kj">זמין：</string>
+    <string name="av_re">זמן הקלטה：</string>
+    <!-- szh -->
+    <string name="video_bespoke_time">הגדר חתימת זמן</string>
+    <string name="limit_time">הגבלת אורך:</string>
+    <string name="record_video_length">הגבלת הקלטה</string>
+    <string name="current_time">זמן נוכחי</string>
+
+
+    <string-array name="days">
+        <item>היום</item>
+        <item>מחר</item>
+        <item>מחרתיים </item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,670 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="1194dip"
+            android:layout_height="676dip"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="592dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/left_back"
+                android:orientation="vertical" >
+
+                <com.zidoo.recorder.view.ZidooButton
+                    android:id="@+id/dialog_view_left_title"
+                    android:layout_width="71dip"
+                    android:layout_height="296dip"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/dialog_view_left_title"
+                    android:paddingLeft="16dip"
+                    android:textColor="#ffffff"
+                    android:textSize="26sp" />
+
+                <com.zidoo.recorder.view.ZidooButton
+                    android:id="@+id/dialog_view_right_title"
+                    android:layout_width="71dip"
+                    android:layout_height="296dip"
+                    android:gravity="center"
+                    android:paddingLeft="16dip"
+                    android:textColor="#ffffff"
+                    android:textSize="26sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/app_bg"
+                android:orientation="vertical" >
+
+                <!-- 左边标题部分 -->
+
+                <LinearLayout
+                    android:id="@+id/dialog_view_left_li"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <!-- 上部分 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <!-- 左边部分 -->
+
+                        <LinearLayout
+                            android:layout_width="725dip"
+                            android:layout_height="410dip"
+                            android:background="@drawable/record_bg"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="120dip"
+                                android:layout_marginTop="40dip"
+                                android:orientation="horizontal" >
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:layout_width="150dip"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|right"
+                                    android:text="@string/video_save_local_path"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:id="@+id/dialog_view_local_path_text"
+                                    android:layout_width="350dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dip"
+                                    android:gravity="center|left"
+                                    android:singleLine="true"
+                                    android:textColor="#999999"
+                                    android:textSize="22sp" />
+
+                                <com.zidoo.recorder.view.ZidooButton
+                                    android:id="@+id/dialog_view_local_path_btn"
+                                    android:layout_width="38dip"
+                                    android:layout_height="38dip"
+                                    android:layout_marginLeft="20dip"
+                                    android:background="@drawable/path_btn_c"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="120dip"
+                                android:layout_marginTop="15dip"
+                                android:orientation="horizontal"
+                                android:visibility="visible" >
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:layout_width="150dip"
+                                    android:layout_height="39dip"
+                                    android:gravity="center|right"
+                                    android:text="@string/video_resolution"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:background="@drawable/format_back"
+                                    android:orientation="horizontal" >
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_re_vga_btn"
+                                        android:layout_width="95dip"
+                                        android:layout_height="39dip"
+                                        android:background="@drawable/format_certer_nomal_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/video_re_vga"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_re_hd_btn"
+                                        android:layout_width="95dip"
+                                        android:layout_height="39dip"
+                                        android:background="@drawable/format_certer_select_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/video_re_hd"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_re_fhd_btn"
+                                        android:layout_width="95dip"
+                                        android:layout_height="39dip"
+                                        android:background="@drawable/format_certer_nomal_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/video_re_fhd"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="120dip"
+                                android:layout_marginTop="15dip"
+                                android:orientation="horizontal" >
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:layout_width="150dip"
+                                    android:layout_height="39dip"
+                                    android:gravity="center|right"
+                                    android:text="@string/video_format"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:background="@drawable/format_back_last"
+                                    android:orientation="horizontal" >
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_format_mp4_btn"
+                                        android:layout_width="95dip"
+                                        android:layout_height="39dip"
+                                        android:background="@drawable/format_certer_select_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/video_format_mp4"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_format_ts_btn"
+                                        android:layout_width="95dip"
+                                        android:layout_height="39dip"
+                                        android:background="@drawable/format_certer_nomal_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/video_format_ts"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="120dip"
+                                android:layout_marginTop="15dip"
+                                android:orientation="horizontal" >
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:layout_width="150dip"
+                                    android:layout_height="39dip"
+                                    android:gravity="center|right"
+                                    android:text="@string/video_appointment"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <com.zidoo.recorder.view.ZidooButton
+                                    android:id="@+id/dialog_view_isport"
+                                    android:layout_width="35dip"
+                                    android:layout_height="35dip"
+                                    android:layout_marginLeft="15dip"
+                                    android:background="@drawable/chek_right_nomal_btn_c"
+                                    android:checked="false"
+                                    android:textSize="20sp" />
+
+                                <com.zidoo.recorder.view.ZidooButton
+                                    android:id="@+id/dialog_view_appointment_year_btn"
+                                    android:layout_width="250dip"
+                                    android:layout_height="39dip"
+                                    android:layout_marginLeft="6dip"
+                                    android:background="#00000000"
+                                    android:gravity="center"
+                                    android:singleLine="true"
+                                    android:text="@string/video_appointment_year"
+                                    android:textColor="#999999"
+                                    android:textSize="23sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="120dip"
+                                android:layout_marginTop="15dip"
+                                android:orientation="horizontal" >
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:layout_width="150dip"
+                                    android:layout_height="39dip"
+                                    android:gravity="center|right"
+                                    android:text="@string/video_length"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+                                    android:background="@drawable/format_back"
+                                    android:orientation="horizontal" >
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_length_auto_btn"
+                                        android:layout_width="95dip"
+                                        android:layout_height="39dip"
+                                        android:background="@drawable/format_certer_select_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/video_length_auto"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_length_h_btn"
+                                        android:layout_width="189dip"
+                                        android:layout_height="39dip"
+                                        android:background="@drawable/time_right_nomal_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/video_length_h"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:gravity="center" >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal" >
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_recorder_btn"
+                                        android:layout_width="210dip"
+                                        android:layout_height="80dip"
+                                        android:background="@drawable/startre_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/start_recorder"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+
+                                    <com.zidoo.recorder.view.ZidooButton
+                                        android:id="@+id/dialog_view_appointment_btn"
+                                        android:layout_width="210dip"
+                                        android:layout_height="80dip"
+                                        android:layout_marginLeft="10dip"
+                                        android:background="@drawable/startre_btn_c"
+                                        android:gravity="center"
+                                        android:singleLine="true"
+                                        android:text="@string/start_appointment"
+                                        android:textColor="#ffffff"
+                                        android:textSize="23sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <!-- 右边部分 -->
+
+                        <LinearLayout
+                            android:layout_width="423dip"
+                            android:layout_height="411dip"
+                            android:layout_marginLeft="18dip"
+                            android:background="@drawable/statu_bg"
+                            android:orientation="vertical" >
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="25dip"
+                                android:layout_marginTop="20dip"
+                                android:gravity="center"
+                                android:text="@string/statu_recorder"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="horizontal" >
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:text="@string/video_input_resolution"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:id="@+id/dialog_view_resolution_p"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="1dip"
+                                    android:gravity="center|left"
+                                    android:singleLine="true"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dip"
+                                android:orientation="vertical" >
+
+                                <com.zidoo.recorder.view.ZidooTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dip"
+                                    android:text="@string/video_save_local_path"
+                                    android:textColor="#ffffff"
+                                    android:textSize="18sp" />
+
+                                <ScrollView
+                                    android:id="@+id/update_dialog_scrollView"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dip"
+                                    android:layout_marginTop="6dip"
+                                    android:background="@drawable/update_dialog_info_back"
+                                    android:paddingBottom="5dip"
+                                    android:paddingLeft="25dip"
+                                    android:paddingRight="20dip"
+                                    android:scrollbarStyle="insideOverlay"
+                                    android:paddingTop="5dip" >
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical" >
+
+                                        <com.zidoo.recorder.view.ZidooTextView
+                                            android:id="@+id/dialog_view_statu"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="#bfbfbf"
+                                            android:textSize="16sp" />
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- 下部分 列表 -->
+
+                    <LinearLayout
+                        android:layout_width="1168dip"
+                        android:layout_height="253dip"
+                        android:layout_marginTop="6dip"
+                        android:background="@drawable/statu_list_bg"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dip"
+                            android:orientation="horizontal" >
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:gravity="center"
+                                android:text="@string/statu_name"
+                                android:textColor="#ffffff"
+                                android:textSize="22sp" />
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:gravity="center"
+                                android:text="@string/statu_position"
+                                android:textColor="#ffffff"
+                                android:textSize="22sp" />
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="100dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:gravity="center"
+                                android:text="@string/statu_formatn"
+                                android:textColor="#ffffff"
+                                android:textSize="22sp" />
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="200dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:gravity="center"
+                                android:text="@string/statu_time"
+                                android:textColor="#ffffff"
+                                android:textSize="22sp" />
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:gravity="center"
+                                android:text="@string/statu_timeall"
+                                android:textColor="#ffffff"
+                                android:textSize="22sp" />
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:gravity="center"
+                                android:text="@string/statu_timeing"
+                                android:textColor="#ffffff"
+                                android:textSize="22sp" />
+
+                            <com.zidoo.recorder.view.ZidooTextView
+                                android:layout_width="130dip"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dip"
+                                android:gravity="center"
+                                android:text="@string/statu_statu"
+                                android:textColor="#ffffff"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/dialog_view_list_li"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 右边标题部分 -->
+
+                <RelativeLayout
+                    android:id="@+id/dialog_view_right_li"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <RelativeLayout
+                        android:id="@+id/home_ac_leftlistview_li"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+
+                        <ListView
+                            android:id="@+id/home_ac_leftlistview"
+                            android:layout_width="880dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="80dip"
+                            android:layout_marginLeft="120dip"
+                            android:layout_marginTop="50dip"
+                            android:background="#00000000"
+                            android:divider="#00000000"
+                            android:listSelector="@drawable/list_selector"
+                            android:scrollbarThumbVertical="@drawable/tao" >
+                        </ListView>
+
+                        <com.zidoo.recorder.view.ZidooTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="20dip"
+                            android:layout_marginLeft="40dip"
+                            android:singleLine="true"
+                            android:text="@string/key_menu_file"
+                            android:textColor="#cccccc"
+                            android:textSize="24sp"
+                            android:typeface="normal"
+                            android:visibility="visible" />
+
+                        <RelativeLayout
+                            android:id="@+id/home_ac_leftlistview_left"
+                            android:layout_width="800dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/operate_view"
+                            android:gravity="center|right"
+                            android:visibility="gone" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <LinearLayout
+                                    android:id="@+id/home_ac_leftlistview_left_0"
+                                    android:layout_width="456dip"
+                                    android:layout_height="122dip"
+                                    android:background="@drawable/list_right_btn_c"
+                                    android:focusable="true"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:layout_width="40dip"
+                                        android:layout_height="40dip"
+                                        android:layout_marginLeft="70dip"
+                                        android:src="@drawable/icon_operate_rename" />
+
+                                    <com.zidoo.recorder.view.ZidooTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dip"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:text="@string/list_left_remame"
+                                        android:textColor="#ffffff"
+                                        android:textSize="32sp"
+                                        android:typeface="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/home_ac_leftlistview_left_1"
+                                    android:layout_width="456dip"
+                                    android:layout_height="122dip"
+                                    android:background="@drawable/list_right_btn_c"
+                                    android:focusable="true"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal" >
+
+                                    <ImageView
+                                        android:layout_width="40dip"
+                                        android:layout_height="40dip"
+                                        android:layout_marginLeft="70dip"
+                                        android:src="@drawable/icon_operate_delete" />
+
+                                    <com.zidoo.recorder.view.ZidooTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="30dip"
+                                        android:gravity="center_vertical"
+                                        android:singleLine="true"
+                                        android:text="@string/list_left_delete"
+                                        android:textColor="#ffffff"
+                                        android:textSize="32sp"
+                                        android:typeface="normal" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/home_ac_notdata_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/not_data_bg"
+                        android:gravity="center"
+                        android:visibility="gone" >
+
+                        <com.zidoo.recorder.view.ZidooTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45dip"
+                            android:text="@string/not_list_hint"
+                            android:textColor="#000000"
+                            android:textSize="25sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dialog_toast_view_re"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dip"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/msg_toast_back"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="4dip"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:paddingTop="4dip" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/msg_toast_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="27sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

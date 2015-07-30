@@ -1,0 +1,5 @@
+<resources>
+
+    <color name="hit_color">#00000000</color>
+    <color name="lock_select">#ffffff</color>
+    <color name="lock_no_select">#444444</color></resources>

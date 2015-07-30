@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/recorder_list_item_view_name"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/recorder_list_item_view_path"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/recorder_list_item_view_fom"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/recorder_list_item_view_y_time"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/recorder_list_item_view_y_alltime"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/recorder_list_item_view_ptime"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <com.zidoo.recorder.view.ZidooTextView
+                android:id="@+id/recorder_list_item_view_statu"
+                android:layout_width="130dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:gravity="center" >
+
+                <com.zidoo.recorder.view.ZidooButton
+                    android:id="@+id/recorder_list_item_view_delete"
+                    android:layout_width="27dip"
+                    android:layout_height="34dip"
+                    android:gravity="center"
+                    android:background="@drawable/delect_c"
+                    android:visibility="gone"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#777777" 
+            android:layout_marginTop="6dip">
+        </View>
+    </LinearLayout>
+
+</RelativeLayout>

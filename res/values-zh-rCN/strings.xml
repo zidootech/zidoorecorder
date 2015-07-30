@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">录制</string>
+    <string name="startRecord">start</string>
+    <string name="stopRecord">stop</string>
+    <string name="no_infor">无HDMI信号</string>
+    <string name="no_infor_msg">无信号,请检查HDMI的连接.</string>
+    <string name="menu_record">菜单键可录屏</string>
+    <string name="dialog_left_title">预\n约\n录\n像</string>
+    <string name="dialog_right_title">录\n像\n列\n表</string>
+    <string name="dialog_right_title1">/mnt/usb/zidoorecord</string>
+    <string name="video_save_local_path">存储位置：</string>
+    <string name="video_resolution">分辨率：</string>
+    <string name="video_input_resolution">HDMI信号：</string>
+    <string name="video_format">视频格式：</string>
+    <string name="video_appointment">预约：</string>
+    <string name="video_appointment_year">2014/7/6 11:22:50</string>
+    <string name="video_length">录像长度：</string>
+    <string name="video_length_auto">自动</string>
+    <string name="video_length_h">00:10:00</string>
+    <string name="video_re_hd">HD</string>
+    <string name="video_re_vga">VGA</string>
+    <string name="video_re_fhd">FHD</string>
+    <string name="video_format_mp4">MP4</string>
+    <string name="video_format_ts">TS</string>
+    <string name="start_recorder">开始录像</string>
+    <string name="stop_recorder">停止录像</string>
+    <string name="start_appointment">添加录像</string>
+    <string name="statu_recorder">状态</string>
+    <string name="statu_name">视频名</string>
+    <string name="statu_position">路径</string>
+    <string name="statu_formatn">格式</string>
+    <string name="statu_resolution">分辨率</string>
+    <string name="statu_time">预约时间</string>
+    <string name="statu_timeall">录像总时长</string>
+    <string name="statu_timeing">已录时长</string>
+    <string name="statu_statu">状态</string>
+    <string name="statu_statu_reing">正在录像</string>
+    <string name="statu_reing_net_open">正在录像， 不能播放</string>
+    <string name="statu_reing_net_edit">正在录像， 不能编辑</string>
+    <string name="statu_reing">正在录像</string>
+    <string name="statu_stop">停止录像</string>
+    <string name="statu_waite">等待录像</string>
+    <string name="statu_save_k">没有存储空间</string>
+    <string name="key_menu_file">菜单键编辑文件</string>
+    <string name="slash">/</string>
+    <string name="colon">:</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="min">分</string>
+    <string name="second">秒</string>
+    <string name="time_msg">设置日期不能低于当前</string>
+    <string name="time_length">录像长度不能低于5s</string>
+    <string name="delete_y">删除</string>
+    <string name="rename_re_have">重命名失败!有相同的文件名</string>
+    <string name="rename_fail">重命名失败</string>
+    <string name="rename_success">重命名成功</string>
+    <string name="rename">重命名</string>
+    <string name="delete_file">删除文件</string>
+    <string name="delete_ok">您确定要删除文件吗？</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_canle">取消</string>
+    <string name="rename_hit">新文件名</string>
+    <string name="input_rename">请输入新文件名</string>
+    <string name="delete_success">删除文件成功</string>
+    <string name="re_time_auto">自动</string>
+    <string name="record_over">录像结束</string>
+    <string name="record_delete">删除预约?</string>
+    <string name="record_delete_hit">提示框</string>
+    <string name="exit_hit_msg">退出应用将停止录像!</string>
+    <string name="exit_str">退出</string>
+    <string name="not_list_hint">您还没有录像哦!</string>
+    <string name="yuyue_time_ok_msg">您的预约录像时间到了!</string>
+    <string name="choose_appoint">请选择预约时间</string>
+    <string name="appoint_above">预约时间不能低于当前时间</string>
+    <string name="av_kj">可用空间：</string>
+    <string name="av_re">可录像：</string>
+    <!-- szh -->
+    <string name="video_bespoke_time">设置预约时间</string>
+    <string name="limit_time">极限时长：</string>
+    <string name="record_video_length">录像时长</string>
+    <string name="current_time">当前时间：</string>
+
+    <!-- PIP -->
+    <string name="move">移 动</string>
+    <string name="scale">缩 放</string>
+    <string name="audio">音 频</string>
+    <string name="exit">退 出</string>
+    <string name="scale_2">自由</string>
+    <string name="scale_3">全屏</string>
+    <string name="reminds_move">移动子画面</string>
+    <string name="reminds_scale">缩放子画面</string>
+    <string name="reminds_audio">切换音频\n开:HDMI音频&#160;&#160;&#160;关:主音频</string>
+    <string name="reminds_exit">退出画中画</string>
+    <string name="reminds_16_9">进入16:9缩放模式</string>
+    <string name="reminds_4_3">进入4:3缩放模式</string>
+    <string name="reminds_arbitrarily">进入自由缩放模式</string>
+    <string name="reminds_full">进入全屏,全屏时按任意键还原至当前状态</string>
+    <string name="reminds_move_operate">[↑↓←→]:移动位置\n[OK]:保存&#160;&#160;&#160;[返回]:取消</string>
+    <string name="reminds_16_9_operate">按16:9比例缩放\n[↑→]:放大&#160;&#160;&#160;[←↓]:缩小\n[OK]:保存&#160;&#160;&#160;[返回]:取消</string>
+    <string name="reminds_4_3_operate">按4:3比例缩放\n[↑→]:放大&#160;&#160;&#160;[←↓]:缩小\n[OK]:保存&#160;&#160;&#160;[返回]:取消</string>
+    <string name="reminds_arbitrarily_operate">[↑↓]:高度增大/减小\n[←→]:宽度减小/增大\n[OK]:保存&#160;&#160;&#160;[返回]:取消</string>
+    <string name="reminds_resolution">为了更好的体验,建议您切换分辨率至%1$s</string>
+
+    <string-array name="days">
+        <item>今天</item>
+        <item>明天</item>
+        <item>后天</item>
+    </string-array>
+
+</resources>

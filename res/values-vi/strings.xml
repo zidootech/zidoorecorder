@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Recorder</string>
+    <string name="startRecord">Start</string>
+    <string name="stopRecord">Stop</string>
+    <string name="no_infor">No HDMI Signal</string>
+    <string name="no_infor_msg">No signal, check your connection to the HDMI.</string>
+    <string name="menu_record">Menu Record</string>
+    <string name="dialog_left_title">R\ne\nc\no\nr\nd</string>
+    <string name="dialog_right_title">L\ni\ns\nt</string>
+    <string name="dialog_right_title1">/mnt/usb/zidoorecord</string>
+    <string name="video_save_local_path">LocalPath：</string>
+    <string name="video_resolution">Resolution：</string>
+     <string name="video_input_resolution">HDMI Signal：</string>
+    <string name="video_format">Format：</string>
+    <string name="video_appointment">Bespoke：</string>
+    <string name="video_appointment_year">2014/7/6 11:22:50</string>
+    <string name="video_length">VideoLength：</string>
+    <string name="video_length_auto">Auto</string>
+    <string name="video_length_h">00:10:00</string>
+    <string name="video_re_hd">HD</string>
+    <string name="video_re_vga">VGA</string>
+    <string name="video_re_fhd">FHD</string>
+    <string name="video_format_mp4">MP4</string>
+    <string name="video_format_ts">TS</string>
+    <string name="start_recorder">Start Record</string>
+    <string name="stop_recorder">Stop Record</string>
+    <string name="start_appointment">Add Record</string>
+    <string name="statu_recorder">Status</string>
+    <string name="statu_name">video name</string>
+    <string name="statu_position">video path</string>
+    <string name="statu_formatn">format</string>
+    <string name="statu_resolution">resolution</string>
+    <string name="statu_time">bespeak time</string>
+    <string name="statu_timeall">length</string>
+    <string name="statu_timeing">recording</string>
+    <string name="statu_statu">status</string>
+    <string name="statu_statu_reing">Recording</string>
+    <string name="statu_reing_net_open">Recording,Not Play</string>
+    <string name="statu_reing_net_edit">Recording,Not Edit</string>
+    <string name="statu_reing">Recording</string>
+    <string name="statu_stop">Stop Recording</string>
+    <string name="statu_waite">Waitting</string>
+    <string name="statu_save_k">Not Available  Memory</string>
+    <string name="key_menu_file">Menu Edit File</string>
+    <string name="list_left_remame">Rename</string>
+    <string name="list_left_delete">Delete</string>
+    <string name="slash">/</string>
+    <string name="colon">:</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="hour">Hour</string>
+    <string name="min">Min</string>
+    <string name="second">Second</string>
+    <string name="time_msg">Setup cannot be lower than the current date</string>
+    <string name="time_length">Recording length can not be less than 5s</string>
+    <string name="delete_y">Delete</string>
+    <string name="rename_re_have">Rename failed because this file name has been used</string>
+    <string name="rename_fail">Rename failed</string>
+    <string name="rename_success">Rename successed</string>
+    <string name="rename">Rename</string>
+    <string name="delete_file">Delete file</string>
+    <string name="delete_ok">Confirm to delete this file?</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_canle">Cancel</string>
+    <string name="rename_hit">New file name</string>
+    <string name="input_rename">Input a new file name</string>
+    <string name="delete_success">Delete file successed</string>
+    <string name="re_time_auto">Auto</string>
+    <string name="record_over">Record over</string>
+    <string name="record_delete">Sure to delete the reservation?</string>
+    <string name="record_delete_hit">Prompt box</string>
+    <string name="exit_hit_msg">Exit the application will stop recording!</string>
+    <string name="exit_str">Exit</string>
+    <string name="not_list_hint">You have no video oh!</string>
+    <string name="yuyue_time_ok_msg">Your reservation recording time is up!</string>
+    <string name="choose_appoint">Please choose an appointment time</string>
+    <string name="appoint_above">The appointment time is less than the current time</string>
+    <string name="av_kj">Available：</string>
+    <string name="av_re">Record Time：</string>
+    <!-- szh -->
+    <string name="video_bespoke_time">Set bespoke time</string>
+    <string name="limit_time">Limit length:</string>
+    <string name="record_video_length">Record video length:</string>
+    <string name="current_time">Current time:</string>
+
+
+    <string-array name="days">
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>Day after tomorrow </item>
+    </string-array>
+
+</resources>
